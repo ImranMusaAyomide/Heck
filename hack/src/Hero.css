@@ -455,15 +455,20 @@
     min-height: auto;
   }
 
-  .hero-content { max-width: 100%; align-items: center; }
-  .hero-sub     { text-align: center; }
-  .hero-stats   { 
-    justify-content: center; 
-}
+  .hero-content {
+    max-width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+  .hero-sub { text-align: center; }
+  .hero-ctas { justify-content: center; }
+  .hero-stats {
+    justify-content: center;
+  }
 
-  .hero-visual  { 
-    min-height: 320px; 
-}
+  .hero-visual {
+    min-height: 320px;
+  }
   .cube-img     { 
     width: clamp(240px,
      80vw, 380px);
@@ -498,4 +503,5 @@
      font-size: 0.72rem; 
      padding: 8px 12px; 
     }
+
 }
