@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@300;400;500;600;700&display=swap');
+
+/* ── Tokens ── */
+:root {
+  --active-bg: #f0f1f3;
+  --active-heading: #0d1117;
+  --member-border: rgba(0,0,0,0.08);
+  --card-bg: #ffffff;
+  --card-border: rgba(0,0,0,0.06);
+  --card-radius: 14px;
+  --desc-color: #1a1e2e;
+  --font-title: 'Syne', sans-serif;
+  --font-body: 'DM Sans', sans-serif;
+}
+
+/* ── Wrapper ── */
+.active-wrapper {
+  background: var(--active-bg);
+}
+
+/* ── Shared section ── */
+.active-section {
+  padding: 52px 56px 64px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.active-heading {
+  font-family: var(--font-title);
+  font-size: clamp(1.3rem, 2.4vw, 1.9rem);
+  font-weight: 700;
+  color: var(--active-heading);
+  margin: 0 0 40px;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+  max-width: 680px;
+}
+
+/* ────────────────────────────
+   SECTION 1 – Members grid
+──────────────────────────── */
+.members-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  row-gap: 24px;
+  column-gap: 0;
+}
+
+.member-logo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 8px;
+  border-right: 1px solid var(--member-border);
+}
+
+.member-logo:last-child,
+.member-logo:nth-child(5) {
+  border-right: none;
+}
+
+/* ── Logo: C4 ── */
+.logo-c4 {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.logo-c4-text {
+  font-family: var(--font-body);
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #111;
+  letter-spacing: -0.02em;
+}
+
+/* ── Logo: INATA box ── */
+.logo-box {
+  display: flex;
+  align-items: center;
+}
+
+/* ── Logo: EEA ── */
+.logo-eea {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.logo-eea-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
+.eea-large {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #111;
+  letter-spacing: 0.02em;
+}
+
+.eea-small {
+  font-family: var(--font-body);
+  font-size: 0.55rem;
+  font-weight: 400;
+  color: #555;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+/* ── Logo: Crypto Valley ── */
+.logo-cv {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.logo-cv-text {
+  font-family: var(--font-body);
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: #e03030;
+  letter-spacing: 0.01em;
+}
+
+/* ── Logo: ERC3643 ── */
+.logo-erc {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.logo-erc-text {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #4e90d4;
+  letter-spacing: 0.01em;
+}
+
+/* ── Logo: code_ ── */
+.logo-code {
+  font-family: var(--font-body);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #111;
+  letter-spacing: -0.02em;
+}
+
+/* ── Logo: European Blockchain Sandbox ── */
+.logo-ebs {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo-ebs-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.logo-ebs-text span {
+  font-family: var(--font-body);
+  font-size: 0.65rem;
+  font-weight: 500;
+  color: #1a1a1a;
+  letter-spacing: 0.01em;
+}
+
+/* ── Logo: ADGM ── */
+.logo-adgm {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo-adgm-text {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  letter-spacing: 0.04em;
+}
+
+/* ── Logo: Dubai Blockchain Center ── */
+.logo-dubai {
+  display: flex;
+  align-items: center;
+}
+
+/* ────────────────────────────
+   SECTION 2 – Partners grid
+──────────────────────────── */
+.partners-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.partner-card {
+  border: 1px solid var(--card-border);
+  border-radius: var(--card-radius);
+  padding: 36px 28px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.partner-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.07);
+}
+
+.partner-logo-wrap {
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+}
+
+.partner-desc {
+  font-family: var(--font-title);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--desc-color);
+  margin: 0;
+  line-height: 1.4;
+  letter-spacing: -0.01em;
+}
+
+/* ── Partner logo: ADGM ── */
+.partner-logo-adgm {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  letter-spacing: 0.04em;
+}
+
+/* ── Partner logo: QFC ── */
+.partner-logo-qfc {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.qfc-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.25;
+}
+
+.qfc-arabic {
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  color: #666;
+  direction: rtl;
+}
+
+.qfc-en {
+  font-family: var(--font-body);
+  font-size: 0.68rem;
+  color: #666;
+  letter-spacing: 0.01em;
+}
+
+/* ── Partner logo: EBS ── */
+.partner-logo-ebs {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.ebs-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.ebs-text span {
+  font-family: var(--font-body);
+  font-size: 0.68rem;
+  font-weight: 500;
+  color: #1a1a1a;
+}
+
+/* ── Responsive ── */
+@media (max-width: 860px) {
+  .active-section {
+    padding: 36px 24px 48px;
+  }
+
+  .members-grid {
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 28px;
+  }
+
+  .member-logo:nth-child(3),
+  .member-logo:nth-child(6),
+  .member-logo:nth-child(9) {
+    border-right: none;
+  }
+
+  .partners-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 520px) {
+  .members-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .member-logo:nth-child(even) {
+    border-right: none;
+  }
+}
