@@ -1,5 +1,5 @@
 import './App.css'
-import { BrowserRouter } from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Hero from './Hero'
 import Feature from './Feature'
 import HowItWork from './HowItWork'
@@ -14,21 +14,29 @@ import Talk from './Talk'
 import Footer from './Footer'
 
 function App() {
-
   return (
     <BrowserRouter>
-      <Hero />
-      <Feature />
-      <HowItWork />
-      <Proven />
-      <Cards />
-      <Security />
-      <EndToEnd />
-      <Team />
-      <Active />
-      <Audit />
-      <Talk />
-      <Footer />
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <Hero />
+              <Feature />
+              <HowItWork />
+              <Proven />
+              <Cards />
+              <Security />
+              <EndToEnd />
+              <Team />
+              <Active />
+              <Talk />
+              <Footer />
+            </>
+          }
+        />
+        <Route path="/audits" element={<Audit />} />
+      </Routes>
     </BrowserRouter>
   )
 }

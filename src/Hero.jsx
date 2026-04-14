@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
-import AuditLink from "./AuditLink";
+import { AuditLink } from "./Audit";
 import "./Hero.css";
 
 const NAV_LINKS = ["Audits", "Services", "Solutions", "Community", "Blog", "Company"];
